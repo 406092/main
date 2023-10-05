@@ -5,7 +5,10 @@
 // Popup window code
 function newPopup(url) {
 	popupWindow = window.open(
-		url,'popUpWindow','height=300,width=400,left=10,top=10,resizable=no,scrollbars=no,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+		url,'popUpWindow','height=300,width=400,left=10,top=10,resizable=no,scrollbars=no,toolbar=no,menubar=no,location=no,directories=no,status=yes')
 }
+var intervalId = window.setInterval(function(){
+  newPopup('col.html')
+}, 3000);
 </script>
 <h3><a href="JavaScript:newPopup('col.html');">Open</a></h3>
